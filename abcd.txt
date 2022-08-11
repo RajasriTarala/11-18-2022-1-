@@ -1,0 +1,21 @@
+
+#include <stdio.h>
+
+int main()
+{
+  	int n,rem,sum=0,product = 1;
+    printf("\n Enter any Number: ");
+  	scanf("%d", & n);
+  	 	
+  	while(n!= 0)
+  	{
+  		rem = n % 10;
+		product = product * rem;
+		sum+=n%10;
+  		n = n/ 10;
+  	}
+	printf(" \n The Product of Digit of a Given Number =  %d\n", product);
+    printf("The sum of a given number is: %d\n",sum);
+    printf("Result:%d",product-sum);
+  	return 0;
+}
